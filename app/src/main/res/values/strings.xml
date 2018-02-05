@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">LocApps</string>
+
+    <!--String: Main & Koneksi-->
+    <string name="subtitleApps">Its simple apps for your data local to load</string>
+    <string name="title1">data</string>
+    <string name="title2">.io</string>
+    <string name="connect_hintedIP">Put IP/DNS: https://192.168.1.1/</string>
+    <string name="connect_buttontext1">CEK IP/DNS ROOT</string>
+
+</resources>

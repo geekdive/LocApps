@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="id.dev.septiyadi.locapps.accessdataActivity">
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:background="#D5E8D4">
+
+        <ImageView
+            android:id="@+id/ivgetPIC"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dfault"
+            android:layout_gravity="left"/>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:paddingLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvgetFOLDER"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FOLDER"
+                android:textSize="19dp"/>
+
+            <TextView
+                android:id="@+id/tvgetLINK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LINK"
+                android:textSize="11dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <WebView
+            android:id="@+id/idWeb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+</LinearLayout>

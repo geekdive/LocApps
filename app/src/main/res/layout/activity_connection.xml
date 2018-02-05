@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="id.dev.septiyadi.locapps.connectionActivity">
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:paddingTop="90dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/icon"/>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textSize="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title1"/>
+
+            <TextView
+                android:textColor="#e90909"
+                android:textStyle="bold"
+                android:textSize="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title2"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:textColor="#a49a9a"
+            android:textSize="13dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/subtitleApps"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/midle"
+        android:layout_below="@id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/edIP"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:hint="@string/connect_hintedIP"
+            android:layout_width="290dp"
+            android:textSize="10dp"
+            android:layout_height="wrap_content"
+            android:digits="0123456789|."
+            android:maxLength="14"/>
+
+        <Button
+            android:id="@+id/btnGotoList"
+            android:drawableLeft="@drawable/ceklink"
+            android:layout_marginTop="15dp"
+            android:drawablePadding="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:paddingRight="25dp"
+            android:paddingLeft="18dp"
+            android:text="@string/connect_buttontext1"
+            android:textSize="19sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:backgroundTint="#6ff9b6"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13dp"
+            android:text="Put IP/DNS Server:"/>
+
+        <TextView
+            android:id="@+id/tvPutIP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="https://0.0.0.0"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
